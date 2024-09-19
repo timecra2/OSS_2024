@@ -1,4 +1,4 @@
-import statistics
+//23101190 Shin YuHee
 
 def read_data(filename):
     # TODO) Read `filename` as a list of integer numbers
