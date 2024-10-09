@@ -29,21 +29,26 @@ if __name__ == '__main__':
     plt.legend()
     plt.title("Midterm/Final Test Score Scatter Plot")
     plt.xlabel("Midterm Scores")
-    plt.ylabel("Final Scores")
     plt.xlim(0,125)
     plt.ylim(0,100)
-    plt.axis("equal")
+    plt.ylabel("Final Scores")
+    
     plt.grid()
     plt.savefig("Assignment 05/data/Final_Test_Score_Scatter_Plot.png",dpi=300,bbox_inches='tight')
 
     plt.show()
-
+    
 
     # TODO) Plot total scores as a histogram
 
+
+
     plt.title("Total Test Score Histogram")
-    plt.hist(total_kr,20,label="Korean",color="red",alpha=0.5)
-    plt.hist(total_en,20,label="English",color="blue",alpha=0.5)
+    plt.hist(total_kr,bins=20,label="Korean",color="red",alpha=0.5)
+    plt.hist(total_en,bins=20,label="English",color="blue",alpha=0.5)
+    plt.xlabel("Total Scores")
+    plt.ylabel("The numbers of students")
+    plt.xlim(0,100)
     plt.savefig("Assignment 05/data/Total_Test_Score_Histogram.png",dpi=300,bbox_inches='tight')
     plt.legend()
     plt.show()
