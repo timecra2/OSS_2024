@@ -10,8 +10,8 @@ def read_data(filename):
 
 if __name__ == '__main__':
     # Load score data
-    class_kr = read_data('data/class_score_kr.csv')
-    class_en = read_data('data/class_score_en.csv')
+    class_kr = read_data('Assignment 05/data/class_score_kr.csv')
+    class_en = read_data('Assignment 05/data/class_score_en.csv')
 
 
     # TODO) Prepare midterm, final, and total scores
