@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
 def read_data(filename):
     data = []
@@ -38,14 +39,18 @@ if __name__ == '__main__':
 
     plt.show()
     
+    
 
     # TODO) Plot total scores as a histogram
 
+    plt.figure()
 
+    bin_width = 5
+    bins = np.arange(0, 101, bin_width)
 
     plt.title("Total Test Score Histogram")
-    plt.hist(total_kr,bins=20,label="Korean",color="red",alpha=0.5)
-    plt.hist(total_en,bins=20,label="English",color="blue",alpha=0.5)
+    plt.hist(total_kr,bins=bins,label="Korean",color="red",alpha=0.5)
+    plt.hist(total_en,bins=bins,label="English",color="blue",alpha=0.5)
     plt.xlabel("Total Scores")
     plt.ylabel("The numbers of students")
     plt.xlim(0,100)
