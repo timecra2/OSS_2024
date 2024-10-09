@@ -23,22 +23,29 @@ if __name__ == '__main__':
     # TODO) Plot midterm/final scores as points
 
     plt.scatter(midterm_kr,final_kr,color="red",label="Korean")
-    plt.scatter(midterm_en,final_en,color="blue",label="English")
+    plt.scatter(midterm_en,final_en,color="blue",label="English",marker='+')
+    
 
     plt.legend()
     plt.title("Midterm/Final Test Score Scatter Plot")
     plt.xlabel("Midterm Scores")
     plt.ylabel("Final Scores")
+    plt.xlim(0,125)
+    plt.ylim(0,100)
+    plt.axis("equal")
+    plt.grid()
+    plt.savefig("Assignment 05/data/Final_Test_Score_Scatter_Plot.png",dpi=300,bbox_inches='tight')
 
     plt.show()
+
 
     # TODO) Plot total scores as a histogram
 
     plt.title("Total Test Score Histogram")
-    plt.hist(total_kr,20,label="Korean")
-    plt.hist(total_en,20,label="English")
+    plt.hist(total_kr,20,label="Korean",color="red",alpha=0.5)
+    plt.hist(total_en,20,label="English",color="blue",alpha=0.5)
+    plt.savefig("Assignment 05/data/Total_Test_Score_Histogram.png",dpi=300,bbox_inches='tight')
     plt.legend()
-    
     plt.show()
 
     
