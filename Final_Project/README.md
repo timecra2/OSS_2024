@@ -47,21 +47,21 @@ $$
 For long story short, this FFT algorithm iterates from 0 to maximum frequency, multiplies the frequency with original sound.  
 Return value is graph composed of phases and frequencies as x-axis and ampliutude as y-axis shown in figure below  
 
-![Figure_2](Figure_2.png)  
+![Figure_2](images/Figure_2.png)  
 *Freqencies and their matching amplitudes*
 
 In this figure, Only a few amplitues are noticably high, and other frequencies are extremely row.  
 Also You would notice that the intervals between local maxima are constant. That is because of **Overtones**.  
 When you play a note in an instrument, Not only the note, but also notes have double,triple frequency also played.   
 And this compositions make uniquenesses of various instruments. 
-![Figure_5](Figure_5.png)    
+![Figure_5](images/Figure_5.png)    
 *Frequency & Amplitudes of bassoon*  
-![Figure_6](Figure_6.png)  
+![Figure_6](images/Figure_6.png)  
 *Frequency & Amplitudes of cello*  
 
 with pythonic codes, I packed them as tuples and sorted these tuples by frequecies in descending order in dictionary.  
 And summed some frequencies in that dictionary, to make modelled-sound
-![Figure_3](Figure_3.png)  
+![Figure_3](images/Figure_3.png)  
 *modelled sound of violin*
 
 ## 3. Hardships and Feelings
@@ -70,7 +70,7 @@ In this project, I intended to make a voice converter, which takes characteristi
 However, A sample of human voice was more complex and un-ordered than a sample of musical instrument.  
 It took a huge amount time to model, and the result was not satisfactory.
 
-![voice](voice.png)  
+![voice](images/voice.png)  
 *the graph seems to be more continuous than instruments* 
 
 So that i changed the direction of this project as modelling a instrument, using the same method i tried to do.
